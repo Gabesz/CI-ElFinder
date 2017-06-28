@@ -7,7 +7,7 @@ class Admin extends CI_Controller {
 		parent::__construct();
 	}
   
-  public function elfinder_init()
+  	public function elfinder_init()
 	{
 		$this->load->helper('path');
 		$hash = $volumeId . rtrim(strtr(base64_encode($path), '+/=', '-_.'), '.');
